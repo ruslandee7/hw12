@@ -8,4 +8,4 @@ EXPOSE 8080
 RUN mkdir /opt/tomcat/ROOT
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
-RUN cp /opt/tomcat/webapps/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT/Config.properties /opt/tomcat/ROOT
+#RUN cp /opt/tomcat/webapps/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT/Config.properties /opt/tomcat/ROOT
