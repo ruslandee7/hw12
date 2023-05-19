@@ -6,7 +6,7 @@ services:
     build: maven/
     container_name: maven
     volumes:
-      - share:/opt/javaapp/target/
+      - hw12_share:/opt/javaapp/target/
 
   web:
     build: tomcat/
@@ -16,7 +16,7 @@ services:
     depends_on:
       - backend
     volumes:
-      - share:/opt/tomcat/webapps/
+      - hw12_share:/opt/tomcat/webapps/
 
 volumes:
-  share:
+  hw12_share:
