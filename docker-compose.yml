@@ -24,13 +24,14 @@ services:
       - backend
     volumes:
       - hw12_share:/opt/tomcat/webapps/
-      - hw12_share:/opt/tomcat/ROOT/
+      - hw12_ROOT:/opt/tomcat/ROOT/
 
   backend:
     build: maven/
     container_name: maven
     volumes:
       - hw12_share:/opt/javaapp/target/
+      - hw12_ROOT:/opt/javaapp/WebContent/
 volumes:
   hw12_share:
-#  hw12_ROOT:
+  hw12_ROOT:
