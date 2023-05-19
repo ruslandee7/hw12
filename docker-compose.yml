@@ -5,7 +5,7 @@ services:
     build: maven/
     container_name: maven
     volumes:
-      - share:/opt/boxfuse/target/
+      - share:/opt/javaapp/target/
 
   web:
     build: tomcat/
