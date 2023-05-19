@@ -24,7 +24,7 @@ services:
       - backend
     volumes:
       - hw12_share:/opt/tomcat/webapps/
-      - hw12_share:/opt/tomcat/ROOT/App*/
+      - hw12_share:/opt/tomcat/ROOT/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT/
 
   backend:
     build: maven/
@@ -33,3 +33,4 @@ services:
       - hw12_share:/opt/javaapp/target/
 volumes:
   hw12_share:
+#  hw12_ROOT:
