@@ -14,11 +14,6 @@ services:
 
     volumes:
       - ./dbdata:/var/lib/mysql/
-  backend:
-    build: maven/
-    container_name: maven
-    volumes:
-      - hw12_share:/opt/javaapp/target/
 
   web:
     build: tomcat/
@@ -30,5 +25,10 @@ services:
     volumes:
       - hw12_share:/opt/tomcat/webapps/
 
+  backend:
+    build: maven/
+    container_name: maven
+    volumes:
+      - hw12_share:/opt/javaapp/target/
 volumes:
   hw12_share:
