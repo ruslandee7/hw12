@@ -2,7 +2,7 @@ FROM alpine:latest
 RUN apk update
 RUN apk add openjdk8 tar
 WORKDIR /opt/tomcat
-ADD /tmp/apache-tomcat-9.0.73.tar.gz /
+ADD apache-tomcat-9.0.73.tar.gz /tmp/
 RUN tar xvzf /tmp/apache-tomcat-9.0.73.tar.gz --strip-components 1 --directory /opt/tomcat/
 EXPOSE 8080
 RUN mkdir /opt/tomcat/ROOT
