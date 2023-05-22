@@ -35,3 +35,4 @@ services:
 volumes:
   hw12_share:
   hw12_ROOT:
+  dbdata:
