@@ -2,7 +2,7 @@
 version: '3'
 services:
   db:
-    container_name: db
+    container_name: database
     image: mysql:5.5
     restart: always
     ports:
@@ -26,7 +26,7 @@ services:
     environment:
       DB_USERNAME: user
       DB_PASSWORD: 1qazxsw2
-      DB_IP: db
+      DB_IP: database
       DB_NAME: mydb
     volumes:
       - hw12_share:/opt/tomcat/webapps/
