@@ -23,6 +23,11 @@ services:
       - "8080:8080"
     depends_on:
       - backend
+    environment:
+      DB_USERNAME: user
+      DB_PASSWORD: 1qazxsw2
+      DB_IP: db
+      DB_NAME: mydb
     volumes:
       - hw12_share:/opt/tomcat/webapps/
       - hw12_ROOT:/opt/tomcat/ROOT/
